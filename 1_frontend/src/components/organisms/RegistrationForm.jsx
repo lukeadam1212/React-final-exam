@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 // components
@@ -10,8 +9,6 @@ import image from "../../assets/images/image.jpg";
 import logo from "../../assets/images/logo.png";
 
 const StyledRegistrationForm = styled.section`
-  height: 35rem;
-  width: 55rem;
   border-radius: 0.5rem;
   background-color: white;
   margin: 2rem;

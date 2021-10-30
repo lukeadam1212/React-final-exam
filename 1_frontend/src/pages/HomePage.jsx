@@ -58,7 +58,7 @@ const HomePage = () => {
         params={{
           background: {
             color: {
-              value: "#050911",
+              value: "#0f2041ad",
             },
           },
           particles: {

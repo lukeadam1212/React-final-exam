@@ -23,16 +23,20 @@ const StyledInput = styled.input`
   }
 `;
 
-const Input = ({ input, bgImage }) => {
+const Input = ({ input, id, action, controlRef, value, bgImage, message }) => {
   return (
-    <StyledInput
-      d-flex
-      align-items-center
-      justify-content-center
-      type={input.type}
-      placeholder={input.placeholder}
-      bgImage={bgImage}
-    />
+    <>
+      <StyledInput
+        bgImage={bgImage}
+        id={id}
+        onChange={action}
+        placeholder={input.placeholder}
+        ref={controlRef}
+        type={input.type}
+        value={value}
+      />
+      {message && <p className="text-warning">{message}</p>}
+    </>
   );
 };
 
@@ -41,6 +45,8 @@ Input.propTypes = {
   input: PropTypes.shape({
     type: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
+
+    value: PropTypes.string,
   }),
 };
 export default Input;

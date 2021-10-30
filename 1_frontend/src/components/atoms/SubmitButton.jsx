@@ -9,6 +9,7 @@ const StyledSubmitButton = styled.button`
   border-radius: 0.3rem;
   border: 1px solid gray;
   color: white;
+  margin: 1rem 0;
   :hover {
     background-color: #fd6659;
   }
