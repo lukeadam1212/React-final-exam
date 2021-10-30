@@ -54,84 +54,54 @@ const HomePage = () => {
       </div>
 
       <Particles
-        className="particles"
-        id="tsparticles"
-        options={{
+        lassName="particles"
+        params={{
           background: {
             color: {
-              value: "#282c34",
-            },
-          },
-          fpsLimit: 60,
-          interactivity: {
-            events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
-            },
-            modes: {
-              bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 40,
-              },
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
+              value: "#050911",
             },
           },
           particles: {
-            color: {
-              value: "#ffffff",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outMode: "bounce",
-              random: false,
-              speed: 1,
-              straight: false,
-            },
             number: {
+              value: 60,
               density: {
                 enable: true,
-                value_area: 800,
+                value_area: 1500,
               },
-              value: 80,
             },
-            opacity: {
-              value: 0.5,
+            line_linked: {
+              enable: true,
+              opacity: 0.02,
             },
-            shape: {
-              type: "circle",
+            move: {
+              direction: "right",
+              speed: 0.05,
             },
             size: {
-              random: true,
-              value: 5,
+              value: 1,
+            },
+            opacity: {
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.05,
+              },
             },
           },
-          detectRetina: true,
+          interactivity: {
+            events: {
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+            },
+            modes: {
+              push: {
+                particles_nb: 1,
+              },
+            },
+          },
+          retina_detect: true,
         }}
       />
     </StyledHomePage>
