@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import google from "../assets/images/google.svg";
-import facebook from "../assets/images/facebook.svg";
+import google from "../../assets/images/google.svg";
+import facebook from "../../assets/images/facebook.svg";
 import Button from "../atoms/Button";
 
 const StyledGetStarted = styled.div`

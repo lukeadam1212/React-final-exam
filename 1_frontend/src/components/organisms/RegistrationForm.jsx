@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+
+// components
 import GetStarted from "../molecules/GetStarted";
 import InputFields from "../molecules/InputFields";
 
 // images
-import image from "../assets/images/image.jpg";
-import logo from "../assets/images/logo.png";
+import image from "../../assets/images/image.jpg";
+import logo from "../../assets/images/logo.png";
 
 const StyledRegistrationForm = styled.section`
   height: 35rem;
@@ -49,14 +51,15 @@ const RegistrationForm = () => {
         <h4 className="text-light text-center w-75">
           Start for free & Get Attractive Offers Today !
         </h4>
+
         <img className="logo" src={logo} alt="" />
       </div>
+
       <div className="right-registration-form d-flex align-items-center justify-content-around flex-column p-3">
         <GetStarted />
         <h2>Or</h2>
         <InputFields />
       </div>
-      {/* <img src={image} alt="" /> */}
     </StyledRegistrationForm>
   );
 };

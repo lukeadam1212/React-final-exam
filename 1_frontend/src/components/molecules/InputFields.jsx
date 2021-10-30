@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+
+// components
 import Input from "../atoms/Input";
 import Label from "../atoms/Label";
 import SubmitButton from "../atoms/SubmitButton";
 
 // images
-import user from "../assets/images/user-1.svg";
-import envelope from "../assets/images/envelope-1.svg";
-import lock from "../assets/images/lock-1.svg";
+import user from "../../assets/images/user-1.svg";
+import envelope from "../../assets/images/envelope-1.svg";
+import lock from "../../assets/images/lock-1.svg";
 
 const StyledInputFields = styled.div`
   width: 80%;

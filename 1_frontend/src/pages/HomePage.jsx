@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Particles from "react-tsparticles";
+
+// components
 import CloseButton from "../components/atoms/CloseButton";
 import RegistrationForm from "../components/organisms/RegistrationForm";
 import Modal from "../components/organisms/Modal";
 import Button from "../components/atoms/Button";
-import Particles from "react-tsparticles";
 
 const StyledHomePage = styled.main`
   height: 100vh;
@@ -22,8 +24,8 @@ const StyledHomePage = styled.main`
 const HomePage = () => {
   // hooks
   // state
-
   const [signupIsOpen, setSignupIsOpen] = useState(false);
+
   // signup
   const openSignup = () => setSignupIsOpen(true);
   const closeSignup = () => setSignupIsOpen(false);
@@ -57,7 +59,7 @@ const HomePage = () => {
         options={{
           background: {
             color: {
-              value: "#202020",
+              value: "#282c34",
             },
           },
           fpsLimit: 60,
